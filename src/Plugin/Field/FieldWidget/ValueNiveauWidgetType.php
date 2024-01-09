@@ -12,7 +12,7 @@ use Drupal\Core\Datetime\DrupalDateTime;
  *
  * @FieldWidget(
  *   id = "value_niveau_widget_type",
- *   module = "buildercv",
+ *   module = "buildercvlayouts",
  *   label = @Translation("Value Niveau widget type @deprecated "),
  *   field_types = {
  *     "value_niveau_type"

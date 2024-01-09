@@ -13,10 +13,10 @@ use Drupal\Core\Form\FormStateInterface;
  * @Layout(
  *   id = "contact_cvi_bluidercv",
  *   label = @Translation("Contact (CV1)"),
- *   category = @Translation("buildercv"),
+ *   category = @Translation("buildercvlayouts"),
  *   path = "layouts/sections",
  *   template = "contact-cv1-buildercv",
- *   library = "buildercv/contact-cv1-buildercv",
+ *   library = "buildercvlayouts/contact-cv1-buildercv",
  *   default_region = "title",
  *   regions = {
  *     "title" = {

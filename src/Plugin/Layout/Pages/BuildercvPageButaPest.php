@@ -12,11 +12,11 @@ use Drupal\formatage_models\FormatageModelsThemes;
  * @Layout(
  *   id = "buildercv_page_butapest",
  *   label = @Translation("Page model CV butapest (CV)"),
- *   category = @Translation("buildercv"),
+ *   category = @Translation("buildercvlayouts"),
  *   description = "Model à 3 regions entete, sidebarleft et conetent, definie à la base pour un CV.",
  *   path = "layouts/pages",
  *   template = "buildercv-page-butapest",
- *   library = "buildercv/buildercv-page-butapest",
+ *   library = "buildercvlayouts/buildercv-page-butapest",
  *   default_region = "entete",
  *   regions = {
  *     "entete" = {
@@ -40,7 +40,7 @@ class BuildercvPageButaPest extends FormatageModelsPages {
    */
   public function __construct(array $configuration, $plugin_id, $plugin_definition, StylesGroupManager $styles_group_manager) {
     parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
-    $this->pluginDefinition->set('icon', drupal_get_path('module', 'buildercv') . "/icones/pages/buildercv_page_butapest.png");
+    $this->pluginDefinition->set('icon', drupal_get_path('module', 'buildercvlayouts') . "/icones/pages/buildercv_page_butapest.png");
   }
   
   /**

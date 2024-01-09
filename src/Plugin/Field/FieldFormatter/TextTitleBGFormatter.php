@@ -26,7 +26,7 @@ class TextTitleBGFormatter extends StringFormatter {
    */
   public static function defaultSettings() {
     return [
-      'layoutgenentitystyles_view' => 'buildercv/field-text-bg'
+      'layoutgenentitystyles_view' => 'buildercvlayouts/field-text-bg'
     ] + parent::defaultSettings();
   }
   
@@ -39,7 +39,7 @@ class TextTitleBGFormatter extends StringFormatter {
       // utilile pour mettre à jour le style
       'layoutgenentitystyles_view' => [
         '#type' => 'hidden',
-        '#value' => 'buildercv/field-text-bg'
+        '#value' => 'buildercvlayouts/field-text-bg'
       ]
     ] + parent::settingsForm($form, $form_state);
   }

@@ -12,10 +12,10 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  * @Layout(
  *   id = "presentation_set_comp",
  *   label = @Translation("Presentation Set Comp (CV)"),
- *   category = @Translation("buildercv"),
+ *   category = @Translation("buildercvlayouts"),
  *   path = "layouts/sections",
  *   template = "set-comp-presentation",
- *   library = "buildercv/set-comp-presentation",
+ *   library = "buildercvlayouts/set-comp-presentation",
  *   default_region = "sc_name",
  *   regions = {
  *     "sc_poste" = {

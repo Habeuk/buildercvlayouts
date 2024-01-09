@@ -27,7 +27,7 @@ class ChartFormatterType extends FormatterBase {
    */
   public static function defaultSettings() {
     return [
-      'layoutgenentitystyles_view' => 'buildercv/field-chart'
+      'layoutgenentitystyles_view' => 'buildercvlayouts/field-chart'
     ] + parent::defaultSettings();
   }
   
@@ -40,7 +40,7 @@ class ChartFormatterType extends FormatterBase {
       // utilile pour mettre à jour le style
       'layoutgenentitystyles_view' => [
         '#type' => 'hidden',
-        '#value' => 'buildercv/field-chart'
+        '#value' => 'buildercvlayouts/field-chart'
       ]
     ] + parent::settingsForm($form, $form_state);
   }
@@ -65,7 +65,7 @@ class ChartFormatterType extends FormatterBase {
       '#theme' => 'buildercv_field_chart',
       '#attached' => [
         'library' => [
-          'buildercv/field_chart'
+          'buildercvlayouts/field_chart'
         ]
       ]
     ];
@@ -78,7 +78,7 @@ class ChartFormatterType extends FormatterBase {
       $backgroundColor[] = "rgba(" . $this->hex2rgb($item->color) . ",0.7)";
       // $backgroundColor[] = $item->color;
     }
-    $elements['#attached']['drupalSettings']['buildercv']['chart_config'] = [
+    $elements['#attached']['drupalSettings']['buildercvlayouts']['chart_config'] = [
       'type' => 'polarArea',
       'data' => [
         'labels' => $labels,

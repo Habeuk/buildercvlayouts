@@ -12,11 +12,11 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  * @Layout(
  *   id = "about_cv_budapest",
  *   label = @Translation("About budapest (CV)"),
- *   category = @Translation("buildercv"),
+ *   category = @Translation("buildercvlayouts"),
  *   description = "Contient deux regions (titre, contents) , utilisé par defaut pour le CV, permet de creer des sections de paragraphes",
  *   path = "layouts/sections",
  *   template = "about-cv-budapest",
- *   library = "buildercv/about-cv-budapest",
+ *   library = "buildercvlayouts/about-cv-budapest",
  *   default_region = "titre",
  *   regions = {
  *     "titre" = {
@@ -38,7 +38,7 @@ class AboutCvBudapest extends FormatageModelsSection {
   public function __construct(array $configuration, $plugin_id, $plugin_definition, StylesGroupManager $styles_group_manager) {
     // TODO Auto-generated method stub.
     parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
-    $this->pluginDefinition->set('icon', drupal_get_path('module', 'buildercv') . "/icones/sections/about_cv_budapest.png");
+    $this->pluginDefinition->set('icon', drupal_get_path('module', 'buildercvlayouts') . "/icones/sections/about_cv_budapest.png");
   }
   
   /**

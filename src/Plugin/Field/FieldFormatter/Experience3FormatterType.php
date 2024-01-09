@@ -26,7 +26,7 @@ class Experience3FormatterType extends ExperienceFormatterType {
    */
   public static function defaultSettings() {
     return [
-      'layoutgenentitystyles_view' => 'buildercv/field-form-date'
+      'layoutgenentitystyles_view' => 'buildercvlayouts/field-form-date'
     ] + parent::defaultSettings();
   }
   
@@ -39,7 +39,7 @@ class Experience3FormatterType extends ExperienceFormatterType {
       // utilile pour mettre à jour le style
       'layoutgenentitystyles_view' => [
         '#type' => 'hidden',
-        '#value' => 'buildercv/field-form-date'
+        '#value' => 'buildercvlayouts/field-form-date'
       ]
     ] + parent::settingsForm($form, $form_state);
   }

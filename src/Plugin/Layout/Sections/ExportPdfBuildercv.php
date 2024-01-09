@@ -12,10 +12,10 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  * @Layout(
  *   id = "export_pdf_buildercv",
  *   label = @Translation(" export_pdf "),
- *   category = @Translation("buildercv"),
+ *   category = @Translation("buildercvlayouts"),
  *   path = "layouts/sections",
  *   template = "export-pdf-buildercv",
- *   library = "buildercv/export-pdf-buildercv",
+ *   library = "buildercvlayouts/export-pdf-buildercv",
  *   default_region = "button",
  *   regions = {
  *     "button" = {

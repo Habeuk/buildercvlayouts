@@ -12,10 +12,10 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  * @Layout(
  *   id = "time_line_cv_buildercv",
  *   label = @Translation(" Time Line (CV) "),
- *   category = @Translation("buildercv"),
+ *   category = @Translation("buildercvlayouts"),
  *   path = "layouts/sections",
  *   template = "time-line-cv-buildercv",
- *   library = "buildercv/time-line-cv-buildercv",
+ *   library = "buildercvlayouts/time-line-cv-buildercv",
  *   default_region = "title",
  *   regions = {
  *     "listes" = {

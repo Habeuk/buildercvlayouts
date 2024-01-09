@@ -12,10 +12,10 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  * @Layout(
  *   id = "presentation_cv2_bluidercv",
  *   label = @Translation("Presentation (CV2)"),
- *   category = @Translation("buildercv"),
+ *   category = @Translation("buildercvlayouts"),
  *   path = "layouts/sections",
  *   template = "presentation-cv2-buildercv",
- *   library = "buildercv/presentation-cv2-buildercv",
+ *   library = "buildercvlayouts/presentation-cv2-buildercv",
  *   default_region = "title",
  *   regions = {
  *     "buildercv_presentation_cv2_name" = {

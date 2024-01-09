@@ -27,7 +27,7 @@ class IconTextFormatter extends FormatterBase {
    */
   public static function defaultSettings() {
     return [
-      'layoutgenentitystyles_view' => 'buildercv/field-icon-address'
+      'layoutgenentitystyles_view' => 'buildercvlayouts/field-icon-address'
     ] + parent::defaultSettings();
   }
   
@@ -39,7 +39,7 @@ class IconTextFormatter extends FormatterBase {
     return [
       'layoutgenentitystyles_view' => [
         '#type' => 'hidden',
-        '#value' => 'buildercv/field-icon-address'
+        '#value' => 'buildercvlayouts/field-icon-address'
       ]
     ] + parent::settingsForm($form, $form_state);
   }

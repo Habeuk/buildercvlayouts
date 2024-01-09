@@ -27,7 +27,7 @@ class IconTextFormatter2 extends IconTextFormatter {
    */
   public static function defaultSettings() {
     return [
-      'layoutgenentitystyles_view' => 'buildercv/field-icon-svg'
+      'layoutgenentitystyles_view' => 'buildercvlayouts/field-icon-svg'
     ] + parent::defaultSettings();
   }
   
@@ -39,7 +39,7 @@ class IconTextFormatter2 extends IconTextFormatter {
     return [
       'layoutgenentitystyles_view' => [
         '#type' => 'hidden',
-        '#value' => 'buildercv/field-icon-svg'
+        '#value' => 'buildercvlayouts/field-icon-svg'
       ]
     ] + parent::settingsForm($form, $form_state);
   }

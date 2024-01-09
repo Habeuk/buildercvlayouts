@@ -26,7 +26,7 @@ class Experience4FormatterType extends ExperienceFormatterType {
    */
   public static function defaultSettings() {
     return [
-      'layoutgenentitystyles_view' => 'buildercv/field-exp4'
+      'layoutgenentitystyles_view' => 'buildercvlayouts/field-exp4'
     ] + parent::defaultSettings();
   }
   
@@ -39,7 +39,7 @@ class Experience4FormatterType extends ExperienceFormatterType {
       // utilile pour mettre à jour le style
       'layoutgenentitystyles_view' => [
         '#type' => 'hidden',
-        '#value' => 'buildercv/field-exp4'
+        '#value' => 'buildercvlayouts/field-exp4'
       ]
     ] + parent::settingsForm($form, $form_state);
   }

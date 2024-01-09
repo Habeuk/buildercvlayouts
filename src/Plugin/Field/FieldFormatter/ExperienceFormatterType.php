@@ -28,7 +28,7 @@ class ExperienceFormatterType extends FormatterBase {
    */
   public static function defaultSettings() {
     return [
-      'layoutgenentitystyles_view' => 'buildercv/time-line'
+      'layoutgenentitystyles_view' => 'buildercvlayouts/time-line'
     ] + parent::defaultSettings();
   }
   
@@ -41,7 +41,7 @@ class ExperienceFormatterType extends FormatterBase {
       // Utilile pour mettre à jour le style
       'layoutgenentitystyles_view' => [
         '#type' => 'hidden',
-        '#value' => 'buildercv/time-line'
+        '#value' => 'buildercvlayouts/time-line'
       ]
     ] + parent::settingsForm($form, $form_state);
   }

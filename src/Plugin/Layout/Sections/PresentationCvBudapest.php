@@ -12,10 +12,10 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  * @Layout(
  *   id = "presentation_cv_budapest",
  *   label = @Translation("Presentation budapest (CV)"),
- *   category = @Translation("buildercv"),
+ *   category = @Translation("buildercvlayouts"),
  *   path = "layouts/sections",
  *   template = "presentation-cv-budapest",
- *   library = "buildercv/presentation-cv-budapest",
+ *   library = "buildercvlayouts/presentation-cv-budapest",
  *   default_region = "name",
  *   regions = {
  *     "name" = {
@@ -43,7 +43,7 @@ class PresentationCvBudapest extends FormatageModelsSection {
   public function __construct(array $configuration, $plugin_id, $plugin_definition, StylesGroupManager $styles_group_manager) {
     // TODO Auto-generated method stub.
     parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
-    $this->pluginDefinition->set('icon', drupal_get_path('module', 'buildercv') . "/icones/sections/presentation_cv_budapest.png");
+    $this->pluginDefinition->set('icon', drupal_get_path('module', 'buildercvlayouts') . "/icones/sections/presentation_cv_budapest.png");
   }
   
   /**

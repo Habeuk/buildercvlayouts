@@ -28,7 +28,7 @@ class ValueNiveau2FormatterType extends ValueNiveauFormatterType {
    */
   public static function defaultSettings() {
     return [
-      'layoutgenentitystyles_view' => 'buildercv/field-progress-custom',
+      'layoutgenentitystyles_view' => 'buildercvlayouts/field-progress-custom',
       'css_container' => '',
       'css_label' => '',
       'css_text' => ''
@@ -44,7 +44,7 @@ class ValueNiveau2FormatterType extends ValueNiveauFormatterType {
       // utilile pour mettre à jour le style
       'layoutgenentitystyles_view' => [
         '#type' => 'hidden',
-        '#value' => 'buildercv/field-progress-custom'
+        '#value' => 'buildercvlayouts/field-progress-custom'
       ]
     ] + parent::settingsForm($form, $form_state);
   }

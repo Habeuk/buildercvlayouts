@@ -13,7 +13,7 @@ use Drupal\Core\Annotation\Translation;
  *
  * @FieldWidget(
  *   id = "chart_widget_type",
- *   module = "buildercv",
+ *   module = "buildercvlayouts",
  *   label = @Translation("Chart widget type @deprecated "),
  *   field_types = {
  *     "chart_field_type"
